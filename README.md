@@ -16,12 +16,38 @@ Aplicación en Streamlit para el laboratorio de muestreo e inferencia estadísti
 
 ## Ejecutar en local
 
+Los comandos se ejecutan **dentro de la carpeta del proyecto** (donde están `app.py` y `requirements.txt`).
+
+**1. Ubicarse en la carpeta del proyecto**
+
+Si se descarga desde GitHub:
+
+```bash
+git clone https://github.com/jmarquezdev20/laboratorio-muestreo-inferencia.git
+cd laboratorio-muestreo-inferencia
+```
+
+Si ya se tiene la carpeta en el equipo (por ejemplo `Desktop\taller\app`):
+
+```bash
+cd "Desktop\taller\app"
+```
+
+**2. Instalar dependencias (solo la primera vez)**
+
 ```bash
 pip install -r requirements.txt
+```
+
+**3. Iniciar la aplicación**
+
+```bash
 streamlit run app.py
 ```
 
-En Windows también se puede abrir con doble clic en `iniciar_app.bat`. La aplicación queda en http://localhost:8501.
+La aplicación se abre en http://localhost:8501. Si ese puerto ya está en uso, Streamlit usa el siguiente (http://localhost:8502).
+
+En Windows también se puede abrir con doble clic en `iniciar_app.bat`, sin escribir comandos.
 
 ## Ecuaciones implementadas
 
